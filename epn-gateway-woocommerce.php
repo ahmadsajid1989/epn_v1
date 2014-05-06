@@ -22,7 +22,7 @@ function epn_gateway()
             global $woocommerce;
 			
          $this->id			= 'epn';
-         $this->icon 		= apply_filters('woocommerce_epn_icon', $woocommerce->plugin_url() . '/assets/images/icons/epn.png');
+         $this->icon 		= apply_filters('woocommerce_epn_icon', plugin_dir_url(__FILE__) . '/images/epn.png');
        	 $this->has_fields 	= false;
        	 $this->liveurl 		= 'https://www.eprocessingnetwork.com/cgi-bin/dbe/order.pl';
 		 $this->method_title     = __( 'EPN', 'woocommerce' );
